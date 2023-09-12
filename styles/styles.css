@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+:root{
+    --cor-primaria: #F5DEB3;
+    --cor-secundaria:  #9d0f35;
+    --cor-hover:#FF6D60;
+
+    --fonte-primaria:'Kanit', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+h1{
+    font-size: 5e;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+}
+
+
+header{
+    padding: 5% 0% 0% 14%;
+
+}
+
+nav{
+    display: flex;
+    gap: 12%;
+}
+
+
+a{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    border: 2px solid var(--cor-secundaria);
+
+}
+
+a :hover{
+    background-color: var(--cor-hover);
+}
+
+
+
+
+
+section{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 10%;
+    height: 60vh;
+}
+
+.img__forza{
+    width: 32%;
+    display: block;
+    margin: 9%;
+
+}
+
+.p__forza{
+    font-size: 1.06rem;
+    width: 45%;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+
+}
+
+.img__farcry{
+    width: 46%;
+    display: block;
+    margin: 9%;
+
+}
+
+.p__farcry{
+    font-size: 1.06rem;
+    width: 63%;
+    text-align:right;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+@media (max-width:688px){
+    body {
+        flex-direction: column;
+        width: auto;
+    }
+    .img__forza{
+        width: 30%;
+    }
+    section{
+        padding: 7%;
+    }
+
+    header{
+        padding: 6%;
+    }
+
+    nav{
+        justify-content: center;
+
+    }
+    .p__forza{
+        width: 120px;
+    }
+    .p__farcry{
+        width: 100px;
+    }
+}
